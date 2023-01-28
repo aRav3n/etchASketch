@@ -1,0 +1,26 @@
+div {
+    display: flex;
+}
+
+.sketchColumn {
+    aspect-ratio: 1 / 1;
+    border: 2px solid black;
+    flex: auto;
+}
+
+#sketchBody {
+    align-items: safe stretch;;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    max-height: 90vh;
+    max-width: 90vw;
+    padding: 0;
+}
+
+.sketchRow {
+    align-items: safe stretch;
+    flex: auto;
+    flex-direction: row;
+    justify-content: center;
+}
