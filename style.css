@@ -2,7 +2,11 @@ div {
     display: flex;
 }
 
-.sketchColumn {
+.draw {
+    background-color: black;
+}
+
+.sketchCell {
     aspect-ratio: 1 / 1;
     border: 2px solid black;
     flex: auto;
