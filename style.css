@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    padding: 0;
 }
 
 .button-container {
@@ -12,12 +13,15 @@ body {
 .container {
     align-items: safe stretch;
     background-color: #E40615;
+    border-radius: 32px;
     flex-direction: column;
     gap: 3vh;
-    height: 90%;
+    margin: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    min-height: 50vh;
+    min-width: 50vw;
     padding: 5vh 5vw 5vh 5vw;
-    border-radius: 32px;
-    width: 90%;
 }
 
 div {
@@ -29,16 +33,16 @@ div {
 }
 
 .sketchCell {
-    aspect-ratio: 1 / 1;
     border: black solid 2px;
     flex: 1 1 auto;
 }
 
 #sketchBody {
+    aspect-ratio: 1 / 1;
     background-color: #E3E3E3;
     align-items: safe stretch;
     justify-content: safe stretch;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     flex-direction: column;
 }
 
