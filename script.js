@@ -1,4 +1,5 @@
 const sketchBody = document.querySelector('#sketchBody');
+const userSizedGrid = document.querySelector('#userSizedGrid');
 let sketchRow;
 let sketchCell;
 let gridSize = 16;

@@ -1,9 +1,23 @@
 body {
     align-items: center;
-    background-color: #E40615;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+}
+
+.button-container {
+    justify-content: center;
+}
+
+.container {
+    align-items: safe stretch;
+    background-color: #E40615;
+    flex-direction: column;
+    gap: 3vh;
+    height: 90%;
+    padding: 5vh 5vw 5vh 5vw;
+    border-radius: 32px;
+    width: 90%;
 }
 
 div {
@@ -16,24 +30,31 @@ div {
 
 .sketchCell {
     aspect-ratio: 1 / 1;
-    flex: auto;
+    border: black solid 2px;
+    flex: 1 1 auto;
 }
 
 #sketchBody {
     background-color: #E3E3E3;
-    align-items: safe stretch;;
-    justify-content: center;
-    flex: auto;
+    align-items: safe stretch;
+    justify-content: safe stretch;
+    flex: 1 0 auto;
     flex-direction: column;
-    margin: 0;
-    max-height: 90vh;
-    max-width: 90vw;
-    padding: 0;
 }
 
 .sketchRow {
     align-items: safe stretch;
-    flex: auto;
-    flex-direction: row;
-    justify-content: center;
+    flex: 1 1 auto;
+}
+
+#userSizedGrid {
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    border-radius: 8px;
+    flex: 0 0 auto;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: bold;
+    padding: 8px;
 }
