@@ -1,3 +1,11 @@
+body {
+    align-items: center;
+    background-color: #E40615;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 div {
     display: flex;
 }
@@ -8,13 +16,14 @@ div {
 
 .sketchCell {
     aspect-ratio: 1 / 1;
-    border: 2px solid black;
     flex: auto;
 }
 
 #sketchBody {
+    background-color: #E3E3E3;
     align-items: safe stretch;;
     justify-content: center;
+    flex: auto;
     flex-direction: column;
     margin: 0;
     max-height: 90vh;

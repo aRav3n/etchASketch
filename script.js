@@ -1,12 +1,15 @@
 const sketchBody = document.querySelector('#sketchBody');
 let sketchRow;
 let sketchCell;
-let heightWidth = 16;
+let gridSize = 16;
 
-for (let i = 0; i < heightWidth; i++){
+// Get user input for heightWidth
+
+// Create grid to draw on
+for (let i = 0; i < gridSize; i++){
     sketchRow = document.createElement('div');
     sketchRow.classList.add('sketchRow');
-    for (j = 0; j < heightWidth; j++){
+    for (j = 0; j < gridSize; j++){
         sketchCell = document.createElement('div');
         sketchCell.classList.add('sketchCell');
         sketchRow.appendChild(sketchCell);
@@ -14,8 +17,8 @@ for (let i = 0; i < heightWidth; i++){
     sketchBody.appendChild(sketchRow);
 };
 
+// Allow the user to draw on the grid by adding draw class to sketchCell
 let sketchCells = document.querySelectorAll('.sketchCell');
-
 sketchCells.forEach(sketchCell => {
     sketchCell.addEventListener('mouseover', () => {
         sketchCell.classList.add('draw');
