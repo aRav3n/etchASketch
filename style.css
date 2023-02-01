@@ -36,7 +36,6 @@ div {
 
 .sketchCell {
     aspect-ratio: 1/1;
-    border: solid black 1px;
     flex: 1 1 100vw;
 }
 
