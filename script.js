@@ -44,7 +44,7 @@ function sketchMouseMovement() {
     let sketchCells = document.querySelectorAll('.sketchCell');
     sketchCells.forEach(sketchCell => {
         sketchCell.addEventListener('mouseover', () => {
-        sketchCell.classList.add('draw');
-    });
+            sketchCell.classList.add('draw');
+        });
 });
 };
